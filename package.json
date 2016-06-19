@@ -1,0 +1,22 @@
+{
+  "name": "MochaChai BoilerPlate",
+  "version": "1.0.0",
+  "description": "Barebones Mocha, Chai and es2015 testing boilerplate",
+  "main": "sample.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "expect": "^1.20.1",
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-register --recursive test/**/*.spec.js",
+    "test:watch": "npm test -- --watch"
+  },
+  "author": "HMAN1911",
+  "license": "ISC"
+}
